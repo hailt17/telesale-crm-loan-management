@@ -11,7 +11,7 @@ Hệ thống tập trung giải quyết 3 nhóm chức năng cốt lõi:
 *   **Quản lý hồ sơ:** Quản lý, tìm kiếm, phân quyền và tracking trạng thái hồ sơ vay tập trung.
 *   **Quản lý Courier:** Chuyển giao hồ sơ sang bộ phận Courier và theo dõi tiến độ thu chứng từ giấy ngoài thực địa.
 
-👉 **[BẤM VÀO ĐÂY ĐỂ XEM BẢNG QUẢN LÝ TÍNH NĂNG & USER STORIES TRÊN GITHUB PROJECTS](DÁN_LINK_GITHUB_PROJECT_CỦA_BẠN_VÀO_ĐÂY)**
+👉 **[BẤM VÀO ĐÂY ĐỂ XEM BẢNG QUẢN LÝ TÍNH NĂNG & USER STORIES TRÊN GITHUB PROJECTS](https://github.com/users/hailt17/projects/1/views/1)**
 
 ---
 
