@@ -1,7 +1,7 @@
 # CRM Quản Lý Hồ Sơ Vay Qua Telesale
 
 ## 🚀 Giới thiệu dự án
-Đây là dự án BA Portfolio mô phỏng quá trình phân tích và thiết kế hệ thống **CRM Web App** chuyên dụng cho quy trình xử lý hồ sơ vay qua kênh Telesale. Dự án tập trung giải quyết triệt để bài toán tracking (theo dõi) trạng thái hồ sơ rời rạc khi dữ liệu khách hàng, kết quả cuộc gọi, đội ngũ Courier (giao nhận) và hệ thống BPM đang bị quản lý thủ công bằng Excel.
+Đây là dự án phân tích và thiết kế hệ thống **CRM Web App** chuyên dụng cho quy trình xử lý hồ sơ vay qua kênh Telesale. Dự án tập trung giải quyết triệt để bài toán tracking (theo dõi) trạng thái hồ sơ rời rạc khi dữ liệu khách hàng, kết quả cuộc gọi, đội ngũ Courier (giao nhận) và hệ thống BPM đang bị quản lý thủ công bằng Excel.
 
 ---
 
@@ -19,7 +19,7 @@ Hệ thống tập trung giải quyết 3 nhóm chức năng cốt lõi:
 
 | Nhóm tài liệu | Nội dung chi tiết | Link tài liệu |
 | :--- | :--- | :--- |
-| **Process** | Quy trình nghiệp vụ AS-IS, TO-BE, sơ đồ chuẩn BPMN | [Xem chi tiết](./docs/01-process.md) |
+| **Process** | Quy trình nghiệp vụ AS-IS, TO-BE, sơ đồ BPMN | [Xem chi tiết](./docs/01-process.md) |
 | **Requirement** | Scope, Use Case Diagram, Danh sách User Stories & AC | [Xem chi tiết](./docs/02-requirement.md) |
 | **UI/UX** | Wireframe/UI hoàn chỉnh cho các màn hình chính (Dashboard, Chi tiết hồ sơ) | [Xem Figma/Ảnh](./docs/03-ui-ux.md) |
 | **Specification** | Đặc tả chức năng (Functional Spec) cho Import, Quản lý và Courier | [Xem chi tiết](./docs/04-spec.md) |
