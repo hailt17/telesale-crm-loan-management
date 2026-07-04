@@ -1,37 +1,43 @@
-# CRM Quản Lý Hồ Sơ Vay Qua Telesale
+# Hệ Thống CRM Quản Lý Hồ Sơ Vay Qua Kênh Telesale
 
 ## 🚀 Giới thiệu dự án
-Đây là dự án phân tích và thiết kế hệ thống CRM Web App chuyên dụng cho quy trình xử lý hồ sơ vay qua kênh Telesale. Dự án tập trung giải quyết triệt để bài toán tracking trạng thái hồ sơ rời rạc khi dữ liệu khách hàng, kết quả cuộc gọi, đội ngũ Courier và hệ thống BPM đang bị quản lý thủ công bằng Excel.
+Dự án tập trung phân tích và thiết kế hệ thống CRM Web App chuyên dụng cho luồng xử lý hồ sơ vay tín dụng qua kênh Telesale. Giải pháp được xây dựng nhằm giải quyết triệt để bài toán quản trị vận hành khi các điểm chạm dữ liệu (thông tin khách hàng, kết quả cuộc gọi, tiến độ đội Courier thực địa và trạng thái đẩy sang core thẩm định BPM) đang bị phân mảnh, rời rạc do quản lý thủ công bằng nhiều file Excel và kênh chat độc lập.
 
 ---
 
 ## 🎯 Phạm vi giải pháp (MVP Scope)
-Hệ thống tập trung giải quyết 3 nhóm chức năng cốt lõi:
-*   **Import dữ liệu:** Import danh sách khách hàng từ file Excel và tự động kiểm tra dữ liệu đầu vào.
-*   **Quản lý hồ sơ:** Quản lý, tìm kiếm, phân quyền và tracking trạng thái hồ sơ vay tập trung.
-*   **Quản lý Courier:** Chuyển giao hồ sơ sang bộ phận Courier và theo dõi tiến độ thu chứng từ giấy ngoài thực địa.
-
-👉 **[BẢNG QUẢN LÝ TÍNH NĂNG & USER STORIES TRÊN GITHUB PROJECTS](https://github.com/users/hailt17/projects/1/views/1)**
+Hệ thống giai đoạn MVP tập trung giải quyết dứt điểm 3 nhóm phân hệ chức năng cốt lõi:
+1. **Import dữ liệu đầu vào:** Thiết lập tính năng tải file Excel danh sách khách hàng tập trung, tự động kiểm tra định dạng, kiểm toán trường bắt buộc và quét check trùng dữ liệu (Validation & Deduplication).
+2. **Quản lý hồ sơ tập trung:** Màn hình giám sát, phân quyền khai thác, tìm kiếm và tracking trạng thái vòng đời của một bộ hồ sơ vay theo thời gian thực.
+3. **Quản lý Courier thực địa:** Hệ thống hóa luồng giao việc, bàn giao thông tin và giám sát chặt chẽ tiến độ đi thu chứng từ giấy ngoài thị trường của đội ngũ Courier.
 
 ---
 
-## 📊 Tài liệu dự án (Main Deliverables)
+## 💻 Bảng Quản Lý Tính Năng & User Stories (Agile Project Management)
+Toàn bộ quá trình phân rã tính năng, quản lý Product Backlog, thiết lập nhãn độ ưu tiên (Must-have/Should-have) và module hóa User Stories được quản trị trực quan tại bảng GitHub Project của dự án:
+
+👉 **[BẤM VÀO ĐÂY ĐỂ XEM BẢNG QUẢN TRỊ TÍNH NĂNG TRÊN GITHUB PROJECTS](DÁN_LINK_GITHUB_PROJECT_CỦA_BẠN_VÀO_ĐÂY)**
+
+---
+
+## 📊 Tài liệu chi tiết dự án (Main Deliverables)
+
+Hệ thống tài liệu đặc tả được phân rã thành các cấu trúc file chuyên biệt giúp các bộ phận liên quan (Stakeholders, Developers, Testers) dễ dàng truy xuất thông tin:
 
 | Nhóm tài liệu | Nội dung chi tiết | Link tài liệu |
 | :--- | :--- | :--- |
-| **Process** | Quy trình nghiệp vụ AS-IS, TO-BE, sơ đồ BPMN | [Xem chi tiết](./docs/01-process.md) |
-| **Requirement** | Scope, Use Case Diagram, Danh sách User Stories & AC | [Xem chi tiết](./docs/02-requirement.md) |
-| **UI/UX** | Wireframe/UI hoàn chỉnh cho các màn hình chính (Dashboard, Chi tiết hồ sơ) | [Xem Figma/Ảnh](./docs/03-ui-ux.md) |
-| **Specification** | Đặc tả chức năng (Functional Spec) cho Import, Quản lý và Courier | [Xem chi tiết](./docs/04-spec.md) |
-| **Data** | Từ điển dữ liệu (Data Dictionary) cho Customer, Case, Loan Info, Courier... | [Xem chi tiết](./docs/05-data.md) |
-| **Testing** | Kịch bản kiểm thử UAT (UAT Test Scenarios) luồng thành công & ngoại lệ | [Xem chi tiết](./docs/06-testing.md) |
+| **01. Business Process** | Phân tích sâu quy trình vận hành hiện tại (AS-IS), giải pháp mục tiêu (TO-BE) và hệ thống sơ đồ luồng chuẩn BPMN. | [Xem chi tiết](./docs/01-process.md) |
+| **02. System Requirement** | Đặc tả yêu cầu hệ thống (SRS): Sơ đồ Use Case, tài liệu Đặc tả chức năng (Functional Spec), danh sách User Stories & AC kèm thiết kế Wireframe UI/UX chi tiết từ Visily. | [Xem chi tiết](./docs/02-requirement.md) |
+| **03. Data Dictionary** | Từ điển dữ liệu chi tiết mô tả cấu trúc, kiểu dữ liệu, ràng buộc khóa ngoại và logic validation cho toàn bộ thực thể hệ thống (Customer, Case, Loan, Call, Courier...). | [Xem chi tiết](./docs/03-data-dictionary.md) |
+| **04. UAT Testing** | Hệ thống kịch bản kiểm thử người dùng chấp nhận (UAT Test Scenarios) bao gồm đầy đủ luồng xử lý thành công và ma trận xử lý lỗi ngoại lệ. | [Xem chi tiết](./docs/04-uat-testing.md) |
 
 ---
 
 ## 🧠 Quyết định nghiệp vụ cốt lõi (Key BA Decisions)
-Để tạo nên sự khác biệt cho giải pháp, dự án quyết định phân tích dựa trên nỗi đau thực tế của vận hành:
-*   **Ưu tiên Web App thay vì Mobile App:** Quyết định chọn CRM Web App làm MVP vì đối tượng chịu ảnh hưởng lớn nhất từ việc lệch trạng thái hồ sơ là Admin, Teamlead và Manager (những người làm việc cố định bằng máy tính). Đội ngũ Courier thực địa sẽ được tối ưu bằng Mobile App ở giai đoạn sau.
-*   **Chặn cập nhật trạng thái tại danh sách tổng:** Không cho phép sửa trạng thái trực tiếp tại bảng Danh sách hồ sơ để tránh bấm nhầm. Trạng thái chỉ hiển thị dạng badge màu, việc cập nhật bắt buộc phải thực hiện trong màn hình *Chi tiết hồ sơ* để đảm bảo có đủ ngữ cảnh và ghi nhận lịch sử.
-*   **Thiết kế "Báo cáo lỗi" thay vì sửa file:** Khi kiểm tra file Excel Import đầu vào bị lỗi, hệ thống sẽ sinh ra một "Báo cáo lỗi" riêng biệt thay vì can thiệp sửa trực tiếp vào file gốc của người dùng, giúp đảm bảo tính toàn vẹn dữ liệu.
-*   **Gom tính năng vào Dropdown "Thao tác":** Để UI màn hình Chi tiết hồ sơ gọn gàng, các nút hành động (Duyệt, Từ chối, Bổ sung) được gom chung vào một Dropdown hành động. Hệ thống sẽ tự động bắt điều kiện trước khi cho phép người dùng kích hoạt các thao tác này.
 
+Để tối ưu hóa tài nguyên và đem lại giá trị vận hành thực tế nhanh nhất cho doanh nghiệp, các quyết định phân tích giải pháp được chốt dựa trên việc đào sâu nỗi đau (Pain Points) của hệ thống cũ:
+
+*   **Ưu tiên Web App thay vì Mobile App cho MVP:** Quyết định chọn nền tảng CRM Web App cho giai đoạn đầu vì đối tượng chịu ảnh hưởng nặng nề nhất từ việc lệch pha trạng thái hồ sơ là Admin, Teamlead và Manager (những bộ phận làm việc cố định với máy tính). Đội ngũ Courier di chuyển ngoài thực địa tạm thời được tối ưu qua luồng phân tuyến khu vực và sẽ nâng cấp Mobile App ở giai đoạn sau.
+*   **Chặn đứng hành vi cập nhật trạng thái tại danh sách tổng:** Hệ thống không cho phép nhân viên sửa trạng thái trực tiếp trên các dòng của bảng danh sách hồ sơ nhằm triệt tiêu rủi ro bấm nhầm do thao tác nhanh. Trạng thái tại bảng tổng chỉ hiển thị dạng badge màu (Read-only), việc cập nhật trạng thái bắt buộc phải xử lý bên trong màn hình Chi tiết hồ sơ để đảm bảo nhân sự có đủ ngữ cảnh và hệ thống ghi vết lịch sử chính xác.
+*   **Thiết kế "Báo cáo lỗi" độc lập khi Import file:** Khi tệp tin Excel tải lên bị lỗi cấu trúc hoặc sai định dạng trường dữ liệu, hệ thống tự động kết xuất ra một "Báo cáo lỗi" chi tiết theo từng dòng thay vì can thiệp sửa đổi trực tiếp trên file gốc của người dùng. Quy định này giúp bảo toàn nguyên vẹn tính toàn vẹn dữ liệu gốc phục vụ công tác đối chiếu ngoại biên.
+*   **Tối ưu UI bằng Dropdown "Thao tác hành động":** Để màn hình Chi tiết hồ sơ giữ được sự tinh gọn, trực quan, toàn bộ các nút hành động điều hướng nghiệp vụ (Duyệt chuyển, Từ chối, Yêu cầu bổ sung, Gửi BPM) được gom chung vào một cấu trúc Dropdown duy nhất. Hệ thống sẽ chạy ngầm các hàm kiểm tra điều kiện logic (Business Rules) để tự động hiển thị hoặc ẩn/khóa các hành động không hợp lệ với trạng thái hiện tại của hồ sơ.
