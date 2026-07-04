@@ -1,7 +1,7 @@
 # CRM Quản Lý Hồ Sơ Vay Qua Telesale
 
 ## 🚀 Giới thiệu dự án
-Đây là dự án phân tích và thiết kế hệ thống **CRM Web App** chuyên dụng cho quy trình xử lý hồ sơ vay qua kênh Telesale. Dự án tập trung giải quyết triệt để bài toán tracking (theo dõi) trạng thái hồ sơ rời rạc khi dữ liệu khách hàng, kết quả cuộc gọi, đội ngũ Courier (giao nhận) và hệ thống BPM đang bị quản lý thủ công bằng Excel.
+Đây là dự án phân tích và thiết kế hệ thống CRM Web App chuyên dụng cho quy trình xử lý hồ sơ vay qua kênh Telesale. Dự án tập trung giải quyết triệt để bài toán tracking (theo dõi) trạng thái hồ sơ rời rạc khi dữ liệu khách hàng, kết quả cuộc gọi, đội ngũ Courier (giao nhận) và hệ thống BPM đang bị quản lý thủ công bằng Excel.
 
 ---
 
