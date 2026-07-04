@@ -12,7 +12,7 @@ Use Case Diagram mô tả các actor chính tham gia vào hệ thống CRM quả
 
 Các nhóm chức năng chính bao gồm: Import danh sách khách hàng, Quản lý người dùng, Xem dashboard/báo cáo, Xem danh sách hồ sơ, Cập nhật chi tiết hồ sơ, Chuyển hồ sơ sang Courier, Theo dõi Courier, Gửi hồ sơ sang BPM. Sơ đồ giúp xác định phạm vi hệ thống, actor tham gia và các chức năng chính trong MVP.
 
-![Use Case Diagram]<img width="1480" height="842" alt="image" src="https://github.com/user-attachments/assets/38bd33b4-b745-4cad-9892-9bc0fae8b6a3" />
+<img width="1480" height="842" alt="image" src="https://github.com/user-attachments/assets/38bd33b4-b745-4cad-9892-9bc0fae8b6a3" />
 
 
 ---
