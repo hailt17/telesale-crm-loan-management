@@ -11,7 +11,7 @@ Hệ thống tập trung giải quyết 3 nhóm chức năng cốt lõi:
 *   **Quản lý hồ sơ:** Quản lý, tìm kiếm, phân quyền và tracking trạng thái hồ sơ vay tập trung.
 *   **Quản lý Courier:** Chuyển giao hồ sơ sang bộ phận Courier và theo dõi tiến độ thu chứng từ giấy ngoài thực địa.
 
-👉 **[BẤM VÀO ĐÂY ĐỂ XEM BẢNG QUẢN LÝ TÍNH NĂNG & USER STORIES TRÊN GITHUB PROJECTS](https://github.com/users/hailt17/projects/1/views/1)**
+👉 **[BẢNG QUẢN LÝ TÍNH NĂNG & USER STORIES TRÊN GITHUB PROJECTS](https://github.com/users/hailt17/projects/1/views/1)**
 
 ---
 
@@ -29,15 +29,9 @@ Hệ thống tập trung giải quyết 3 nhóm chức năng cốt lõi:
 ---
 
 ## 🧠 Quyết định nghiệp vụ cốt lõi (Key BA Decisions)
-Để tạo nên sự khác biệt cho giải pháp, mình đã đưa ra các quyết định phân tích dựa trên nỗi đau (pain points) thực tế của vận hành:
+Để tạo nên sự khác biệt cho giải pháp, dự án quyết định phân tích dựa trên nỗi đau (pain points) thực tế của vận hành:
 *   **Ưu tiên Web App thay vì Mobile App:** Quyết định chọn CRM Web App làm MVP vì đối tượng chịu ảnh hưởng lớn nhất từ việc lệch trạng thái hồ sơ là Admin, Teamlead và Manager (những người làm việc cố định bằng máy tính). Đội ngũ Courier thực địa sẽ được tối ưu bằng Mobile App ở giai đoạn sau.
 *   **Chặn cập nhật trạng thái tại danh sách tổng:** Không cho phép sửa trạng thái trực tiếp tại bảng Danh sách hồ sơ để tránh bấm nhầm. Trạng thái chỉ hiển thị dạng badge màu, việc cập nhật bắt buộc phải thực hiện trong màn hình *Chi tiết hồ sơ* để đảm bảo có đủ ngữ cảnh và ghi nhận lịch sử (Log lịch sử).
 *   **Thiết kế "Báo cáo lỗi" thay vì sửa file:** Khi kiểm tra file Excel Import đầu vào bị lỗi, hệ thống sẽ sinh ra một "Báo cáo lỗi" (Error Report) riêng biệt thay vì can thiệp sửa trực tiếp vào file gốc của người dùng, giúp đảm bảo tính toàn vẹn dữ liệu.
 *   **Gom tính năng vào Dropdown "Thao tác":** Để UI màn hình Chi tiết hồ sơ gọn gàng, các nút hành động (Duyệt, Từ chối, Bổ sung) được gom chung vào một Dropdown hành động. Hệ thống sẽ tự động bắt điều kiện (Business Rules) trước khi cho phép người dùng kích hoạt các thao tác này.
 
----
-
-## ⚠️ Giả định và Hạn chế (Assumptions & Limitations)
-*   Dự án mang tính chất mô phỏng Portfolio cá nhân, các số liệu KPI, tên người dùng và mã hồ sơ đều là dữ liệu mẫu (Dummy data).
-*   Hệ thống BPM (Business Process Management) được giả định là một hệ thống bên ngoài, sẵn sàng tiếp nhận dữ liệu khi hồ sơ trên CRM đạt đủ điều kiện.
-*   Các API được mô tả trong tài liệu đặc tả là các API giả định để phục vụ mục đích thiết kế luồng dữ liệu.
